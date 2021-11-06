@@ -52,6 +52,7 @@ func main(){
 				log.Fatal(err)
 			}else{
 				fmt.Println("Message successfully published", len(messages))
+				fmt.Println("Partition No",messages[0].Partition)
 			}
 
 		},
